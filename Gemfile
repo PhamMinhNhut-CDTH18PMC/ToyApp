@@ -5,8 +5,7 @@ ruby '2.6.8'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+# Use pg as the database for Active Record
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -27,7 +26,7 @@ gem 'devise'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
-gem 'pg', '~> 1.2', '>= 1.2.3'
+gem 'pg', '~> 1.1'
 gem 'pry', '~> 0.9.10'
 gem 'pry-nav', '~> 0.2.4'
 gem 'pry-remote', '~> 0.1.8'
