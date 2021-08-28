@@ -7,5 +7,4 @@ class CreateMicroposts < ActiveRecord::Migration[6.1]
       #Ex:- :null => false
     end
   end
-  change_column :microposts, :id, :int, null: false, unique: true, auto_increment: true,  primary_key: true
 end
