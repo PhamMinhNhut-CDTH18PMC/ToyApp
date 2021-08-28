@@ -1,0 +1,23 @@
+<!-- <h1>Sessions#login</h1>
+<p>Find me in app/views/sessions/login.html.erb</p> -->
+<div class="container">
+    <div class="row" style="max-width: 600px;">
+        <%= form_tag '/register' do %>
+            <h3>Đăng ký</h3>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Tên tài khoản</label>
+              <%= text_field_tag :username ,"",class:"form-control",  placeholder:"Nhập tài khoản"%>
+              <!-- <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"> -->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <%= text_field_tag :password ,"",class:"form-control",  placeholder:"Nhập mật khẩu", type:"password"%>
+
+              <!-- <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> -->
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Submit</button>
+          <% end %>
+        
+    </div>
+</div>
